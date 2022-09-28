@@ -9,7 +9,7 @@ export default function NFTDetails() {
   const nft = nfts.find((nft) => nft.id === router.query.id);
   console.log(nft);
   return (
-    <div>
+    <div className="w-full px-24">
       <Head>
         <title>{nft?.name} NFT - Details Page</title>
       </Head>
@@ -43,7 +43,7 @@ export default function NFTDetails() {
       </div>
       <div className="mt-24">
         <h2 className="text-4xl mt-24">More Works</h2>
-        <div className="flex flex-wrap items-start gap-16 mt-7">
+        <div className="flex flex-wrap items-start gap-8 mt-7">
           {nfts
             .filter((_nft, index) => index < 3)
             .map((nft, i) => (
