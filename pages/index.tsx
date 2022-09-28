@@ -3,14 +3,14 @@ import Image from "next/image";
 import { ChangeEvent, useCallback, useMemo, useState } from "react";
 import { NFTCard } from "../components/NFTCard";
 
-const nfts = [
+export const nfts = [
   {
     id: "1",
     name: "#4473",
     price: "0.1",
     author: "EA4E545",
     image: "https://ik.imagekit.io/bayc/assets/ape1.png",
-    descriptions: "Description description",
+    description: "Description description",
   },
   {
     id: "2",
@@ -19,7 +19,7 @@ const nfts = [
     author: "jordanlyall-vault",
     image:
       "https://img.seadn.io/files/b0a2331a53def406ee438364ed530b4f.png?fit=max&w=1000",
-    descriptions: "Description description",
+    description: "Description description",
   },
   {
     id: "3",
@@ -28,7 +28,7 @@ const nfts = [
     author: "Minco-Trading",
     image:
       "https://img.seadn.io/files/e05ae6dd46deff2de4ab4e124b3a786c.png?fit=max&w=1000",
-    descriptions: "Description description",
+    description: "Description description",
   },
   {
     id: "4",
@@ -37,7 +37,7 @@ const nfts = [
     author: "00C850",
     image:
       "https://img.seadn.io/files/2e17aa8e5388382edefbe5280ca8daed.png?fit=max&w=1000",
-    descriptions: "Description description",
+    description: "Description description",
   },
 ];
 

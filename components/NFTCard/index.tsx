@@ -8,7 +8,7 @@ type NFTCardProps = {
     price: string;
     author: string;
     image: string;
-    descriptions: string;
+    description: string;
   };
 };
 
